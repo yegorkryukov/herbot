@@ -1,12 +1,12 @@
 
 # coding: utf-8
 import os
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['consumer_key'], \
-                  os.environ['consumer_secret'], \
-                  os.environ['access_token'], \
-                  os.environ['access_token_secret'], \
-                  os.environ['weather_api_key'])
+#from boto.s3.connection import S3Connection
+#s3 = S3Connection(os.environ['consumer_key'], \
+#                  os.environ['consumer_secret'], \
+#                  os.environ['access_token'], \
+#                  os.environ['access_token_secret'], \
+#                  os.environ['weather_api_key'])
 
 
 # Dependencies
@@ -21,12 +21,12 @@ import datetime
 #from config import *
 
 # Twitter API Keys
-#consumer_key = consumer_key
-#consumer_secret = consumer_secret
-#access_token = access_token
-#access_token_secret = access_token_secret
+consumer_key = os.environ.get('consumer_key')
+consumer_secret = os.environ.get('consumer_secret')
+access_token = os.environ.get('access_token')
+access_token_secret = os.environ.get('access_token_secret')
 # Weather API Key
-#api_key = weather_api_key
+weather_api_key = os.environ.get('weather_api_key')
 
 def WeatherTweet():
 
