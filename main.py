@@ -27,7 +27,7 @@ access_token = os.environ.get('access_token')
 access_token_secret = os.environ.get('access_token_secret')
 # Weather API Key
 weather_api_key = os.environ.get('weather_api_key')
-print(weather_api_key)
+#print(weather_api_key)
 
 def WeatherTweet():
 
