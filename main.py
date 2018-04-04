@@ -27,6 +27,7 @@ access_token = os.environ.get('access_token')
 access_token_secret = os.environ.get('access_token_secret')
 # Weather API Key
 weather_api_key = os.environ.get('weather_api_key')
+print(weather_api_key)
 
 def WeatherTweet():
 
@@ -34,7 +35,7 @@ def WeatherTweet():
     url = "http://api.openweathermap.org/data/2.5/weather?"
     city = "Moscow"
     units = "metric"
-    query_url = url + "appid=" + weather_api_key + "&q=" + city + "&units=" + units
+    query_url = str(url + "appid=" + weather_api_key + "&q=" + city + "&units=" + units)
 
     # Perform the API call to get the weather
     r = req.get(query_url)
