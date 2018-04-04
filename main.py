@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[1]:
-
-
 # Dependencies
 import tweepy
 import time
@@ -11,11 +8,9 @@ import json
 import random
 import requests as req
 import datetime
-from config import *
 
-
-# In[2]:
-
+#commenting this out because heroku vars should pick up
+#from config import *
 
 # Twitter API Keys
 consumer_key = consumer_key
@@ -24,10 +19,6 @@ access_token = access_token
 access_token_secret = access_token_secret
 # Weather API Key
 api_key = weather_api_key
-
-
-# In[5]:
-
 
 def WeatherTweet():
 
@@ -56,9 +47,6 @@ def WeatherTweet():
         except tweepy.TweepError as e:
             print(e)
             pass      
-
-
-# In[6]:
 
 
 # Infinite loop
