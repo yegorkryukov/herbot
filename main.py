@@ -34,7 +34,7 @@ def WeatherTweet():
     url = "http://api.openweathermap.org/data/2.5/weather?"
     city = "Moscow"
     units = "metric"
-    query_url = url + "appid=" + api_key + "&q=" + city + "&units=" + units
+    query_url = url + "appid=" + weather_api_key + "&q=" + city + "&units=" + units
 
     # Perform the API call to get the weather
     r = req.get(query_url)
