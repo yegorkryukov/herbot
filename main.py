@@ -61,5 +61,5 @@ def WeatherTweet():
 # Infinite loop
 while True:
     WeatherTweet()
-    time.sleep(3600)
+    time.sleep(18000)
 
